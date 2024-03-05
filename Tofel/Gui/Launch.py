@@ -15,13 +15,28 @@ def build_tofel_record(
     ) -> gr.Blocks:
 
     demo = gr.Blocks(
-        title='Chatter Judge',
+        title='Tofel Vocabulary Record',
     )
 
     with demo:
-        gr.Markdown(
+        gr.HTML(
             heaader.tofel_record_header
         )
+
+        with gr.Tab("Add New Word"):
+            gr.Markdown(
+                "Add New Word"
+            )
+
+        with gr.Tab("Quiz"):
+            gr.Markdown(
+                "Quiz"
+            )
+
+        with gr.Tab("Memory"):
+            gr.Markdown(
+                "Memory"
+            )
 
 
     # demo.auth=auth.auth_admin             # temporary disable auth
