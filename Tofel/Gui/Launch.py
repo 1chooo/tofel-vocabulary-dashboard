@@ -8,6 +8,7 @@ Version: v0.0.1
 import gradio as gr
 from typing import Any
 from Tofel.Gui.Information import Header as heaader
+from Tofel.Gui.Tab.Add import init_add_new_word_tab
 
 def build_tofel_record(
         *args: Any, 
@@ -23,10 +24,7 @@ def build_tofel_record(
             heaader.tofel_record_header
         )
 
-        with gr.Tab("Add New Word"):
-            gr.Markdown(
-                "Add New Word"
-            )
+        init_add_new_word_tab()
 
         with gr.Tab("Quiz"):
             gr.Markdown(
@@ -38,8 +36,5 @@ def build_tofel_record(
                 "Memory"
             )
 
-
-    # demo.auth=auth.auth_admin             # temporary disable auth
-    # demo.auth_message = 'Welcome to Tofel!!!'
 
     return demo
