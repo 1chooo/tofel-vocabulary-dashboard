@@ -7,7 +7,7 @@ Version: v0.0.1
 
 tofel_record_header = """\
 <div align="center"> 
-    <h1>🏗 TOFEL VOCABULARY DASHBOARD</h1> 
+    <h1>TOFEL VOCABULARY DASHBOARD</h1> 
 </div>
 """
 
